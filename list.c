@@ -48,12 +48,6 @@ void  list_push(list* ls, char* str){
 }
 
 void  list_destroy(list* ls){
-    /*
-    for(node* curr = ls->head; curr != NULL; curr = curr->next){
-        node_destroy(curr); 
-    }
-    */
-
     node* curr = ls->head;
     while(curr != NULL){
         node* temp = curr;
