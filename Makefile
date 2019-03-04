@@ -1,13 +1,14 @@
-CC=gcc -std=c99
+CC=gcc 
+CFLAGS=-std=c99 -Wall
 
 regex: main.c list.o regex.o
-	$(CC) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 list.o: list.c list.h
-	$(CC) -c list.c
+	$(CC) $(CFLAGS) -c list.c
 
 regex.o: regex.c regex.h
-	$(CC) -c regex.c
+	$(CC) $(CFLAGS) -c regex.c
 
 clean:
 	rm list.o
