@@ -21,9 +21,9 @@ should compile the 'regex' module, the 'list' module and the 'regex' executable.
 
     $ cd regex
     $ make
-    gcc -std=c99 -c list.c
-    gcc -std=c99 -c regex.c
-    gcc -std=c99 -o regex main.c list.o regex.o
+    gcc  -std=c99 -Wall -c list.c
+    gcc  -std=c99 -Wall -c regex.c
+    gcc  -std=c99 -Wall -o regex main.c list.o regex.o
 
 **Running**
 
